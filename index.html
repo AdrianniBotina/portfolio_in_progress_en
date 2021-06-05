@@ -571,7 +571,7 @@
 
 		.SubsC .deslizadosSubs{
 			/*Por cada slide(sección) que tengas sumale el 100%*/
-			width:100%;
+			width:200%;
 			display: flex;
 			list-style: none;
 			transition: transform 0.5s ease-in-out;
@@ -597,10 +597,64 @@
 		}
 
 
-		/*Divido el porcentaje dependendo la cantidad de secciones que son 3*/
-		#deslizarSubs-1:checked ~ .deslizadosSubs{ transform: translate(-1.6%); }
+		#deslizarSubs-1:checked ~ .deslizadosSubs{ transform: translate(-1%); }
+		#deslizarSubs-2:checked ~ .deslizadosSubs{ transform: translate(-48.96%); }
 
-		#deslizarSubs-1:checked ~ .deslizadosSubs-nav label#puntoS-1{ background-color: #0095B6;}
+		#deslizarSubs-1:checked ~ .deslizadosSubs-nav label#puntoS-1,
+		#deslizarSubs-2:checked ~ .deslizadosSubs-nav label#puntoS-2{ background-color: #0095B6;}
+
+/****************************************/
+/*************** MARVEL *****************/
+
+		.MarvelC{
+			max-width: 416px;
+			overflow-x: hidden;
+		}
+
+		.MarvelC .deslizadosMarvel{
+			/*Por cada slide(sección) que tengas sumale el 100%*/
+			width:600%;
+			display: flex;
+			list-style: none;
+			transition: transform 0.5s ease-in-out;
+		}
+
+		.MarvelC input{
+			display: none;
+		}
+
+		.MarvelC label{
+			border:medium solid #0095B6;
+			border-radius: 10%;
+			margin: 0 0.25rem;
+			display: inline-block;
+			width: 3.7rem;
+			height: 3.7rem;
+			cursor:pointer;
+		}
+
+		.deslizadosMarvel-nav{
+			display:flex;
+			justify-content: center;
+		}
+
+
+		/*Divido el porcentaje dependendo la cantidad de secciones que son 4*/
+		#deslizarMarvel-1:checked ~ .deslizadosMarvel{ transform: translate(-1.87%); }
+		#deslizarMarvel-2:checked ~ .deslizadosMarvel{ transform: translate(-18.9%); }
+		#deslizarMarvel-3:checked ~ .deslizadosMarvel{ transform: translate(-35.96%); }
+		#deslizarMarvel-4:checked ~ .deslizadosMarvel{ transform: translate(-52.96%); }
+		#deslizarMarvel-5:checked ~ .deslizadosMarvel{ transform: translate(-70.02%); }
+		#deslizarMarvel-6:checked ~ .deslizadosMarvel{ transform: translate(-87.06%); }
+
+		#deslizarMarvel-1:checked ~ .deslizadosMarvel-nav label#puntoM-1,
+		#deslizarMarvel-2:checked ~ .deslizadosMarvel-nav label#puntoM-2,
+		#deslizarMarvel-3:checked ~ .deslizadosMarvel-nav label#puntoM-3,
+		#deslizarMarvel-4:checked ~ .deslizadosMarvel-nav label#puntoM-4,
+		#deslizarMarvel-5:checked ~ .deslizadosMarvel-nav label#puntoM-5,
+		#deslizarMarvel-6:checked ~ .deslizadosMarvel-nav label#puntoM-6{ background-color: #0095B6;}
+
+/***************************************/
 
 /****************** CARRUSEL UNITY ******************/
 
@@ -807,7 +861,21 @@
 				overflow-x: hidden;
 			}
 
-			#deslizarSubs-1:checked ~ .deslizadosSubs{ transform: translate(-2.6%); }
+			#deslizarSubs-1:checked ~ .deslizadosSubs{ transform: translate(-1.6%); }
+			#deslizarSubs-2:checked ~ .deslizadosSubs{ transform: translate(-51.2%); }
+
+			/************************ MARVEL **************************/
+			.MarvelC{
+				max-width: 816px;
+				overflow-x: hidden;
+			}
+
+			#deslizarMarvel-1:checked ~ .deslizadosMarvel{ transform: translate(-0.76%); }
+			#deslizarMarvel-2:checked ~ .deslizadosMarvel{ transform: translate(-17.36%); }
+			#deslizarMarvel-3:checked ~ .deslizadosMarvel{ transform: translate(-33.86%); }
+			#deslizarMarvel-4:checked ~ .deslizadosMarvel{ transform: translate(-50.4%); }
+			#deslizarMarvel-5:checked ~ .deslizadosMarvel{ transform: translate(-66.92%); }
+			#deslizarMarvel-6:checked ~ .deslizadosMarvel{ transform: translate(-83.5%); }
 
 			/************************ UNITY **************************/
 
@@ -1207,7 +1275,7 @@
 			</svg>
 			</a>
 
-			<a class="imgicored"><!-- <a class="imgico" href="#btnskill-7"> -->
+			<a class="imgico" href="#btnskill-7"><!-- <a class="imgicored"> -->
 			<span class="tooltip">Marvelous Designer</span>
 			<svg
 			   xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -1701,6 +1769,7 @@
 				<div class="SubsC">
 
 					<input type="radio" name="deslizadosSubs" id="deslizarSubs-1" checked>
+					<input type="radio" name="deslizadosSubs" id="deslizarSubs-2">
 
 					<ul class="deslizadosSubs">
 						<li class="deslizarSubs">
@@ -1725,10 +1794,34 @@
 								</div>
 							</article>
 						</li>
+						<!--  -->
+						<li class="deslizarSubs">
+							<article class="portfolio-modal">
+								<img src="img/Substance002.jpg" alt="skill 1">
+								<div class="portfolio-info">
+									<h3>TITLE</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime excepturi nisi minus suscipit dicta eos sit? Voluptatum dicta, placeat excepturi repellendus similique exercitationem nihil quisquam, deleniti. Autem, nemo non.
+									</p>
+									<!-- <p>
+										The links are below. They are freely accessible without being registered as a user at <a href="https://www.freelancer.com" target="_blank">freelancer.com</a>.
+									</p> -->
+									<img class="contestimg" src="VR4J.jpg" alt="skill 1">
+									<div class="portfolio-details">
+										<small><b>LINK:</b></small>
+											<small><a href="" target="_blank" rel="noopened">https://www.web-site.com</a></small>
+									<!-- 
+										<small><b>ENTRY:</b></small>
+											<small><a href="https://www.freelancer.com/contest/viewentry.php?project_id=908938&entry_id=11610087&fast_login=1" target="_blank" rel="noopened">https://www.freelancer.com/contest/908938_11610087</a></small>
+									</div> -->
+								</div>
+							</article>
+						</li>
 					</ul>
 
 					<div class="deslizadosSubs-nav">
 						<label for="deslizarSubs-1" id="puntoS-1" ></label>
+						<label for="deslizarSubs-2" id="puntoS-2" ></label>
 					</div>
 
 				</div>
@@ -1757,7 +1850,157 @@
 					<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" id="svg8" version="1.1" viewBox="0 0 6.3499999 6.3500002" height="24" width="24"> <defs id="defs2" /> <metadata id="metadata5"> <rdf:RDF> <cc:Work rdf:about=""> <dc:format>image/svg+xml</dc:format> <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" /> <dc:title></dc:title> </cc:Work> </rdf:RDF> </metadata> <g id="g55" transform="translate(0,-290.64999)"> <g transform="matrix(0.09599309,0,0,0.09599999,2.696523,265.47563)" id="g53"> <path style="display:inline;fill:#07ddf0;stroke-width:0.26458335" d="m 0.08732314,327.99366 c -4.78273684,-0.75181 -9.65041554,-2.65733 -13.67867914,-5.35469 -2.559393,-1.71379 -5.97266,-4.98653 -7.9215,-7.59536 -1.902507,-2.54681 -4.489215,-7.70448 -5.254669,-10.47736 -2.694678,-9.76157 -1.117688,-19.5446 4.503536,-27.93818 1.795803,-2.68149 5.886859,-6.77254 8.568342,-8.56835 9.9273042,-6.64836 22.1384698,-7.64959 32.593026,-2.67239 7.149399,3.40368 12.298405,8.47582 15.733572,15.49871 4.571789,9.3466 4.571789,19.49298 0,28.83958 -1.87284,3.82885 -4.003934,6.75109 -6.965468,9.55132 -2.711831,2.56413 -5.17116,4.2348 -8.723808,5.92623 -5.807274,2.76488 -12.6112062,3.77188 -18.85435186,2.79049 z" id="path47" /> <path style="display:inline;fill:#fc0231;stroke-width:0.26458335" d="m 0.08732314,327.99366 c -4.78273684,-0.75181 -9.65041554,-2.65733 -13.67867914,-5.35469 -2.559393,-1.71379 -5.97266,-4.98653 -7.9215,-7.59536 -1.902507,-2.54681 -4.489215,-7.70448 -5.254669,-10.47736 -2.694678,-9.76157 -1.117688,-19.5446 4.503536,-27.93818 1.795803,-2.68149 5.886859,-6.77254 8.568342,-8.56835 9.9273042,-6.64836 22.1384698,-7.64959 32.593026,-2.67239 7.149399,3.40368 12.298405,8.47582 15.733572,15.49871 4.571789,9.3466 4.571789,19.49298 0,28.83958 -1.87284,3.82885 -4.003934,6.75109 -6.965468,9.55132 -2.711831,2.56413 -5.17116,4.2348 -8.723808,5.92623 -5.807274,2.76488 -12.6112062,3.77188 -18.85435186,2.79049 z M -12.215498,317.46468 c 0.345942,-0.47294 1.597712,-1.99099 2.7817104,-3.37343 1.1839988,-1.38245 4.5094826,-5.37105 7.3899644,-8.86355 2.88048076,-3.4925 5.458565,-6.38771 5.7290776,-6.43381 0.6504041,-0.11082 0.561893,-0.20697 9.2115486,10.00569 4.12886,4.87495 7.652824,9.02217 7.831035,9.21604 0.264522,0.28778 0.743373,-0.0267 2.607897,-1.71254 1.256133,-1.13578 2.283127,-2.18737 2.282209,-2.33688 -7.94e-4,-0.14951 -0.333449,-0.4605 -0.738953,-0.69109 -0.4055,-0.2306 -4.393342,-4.37459 -8.861867,-9.20887 -6.4151642,-6.94025 -8.1245922,-8.93761 -8.1245922,-9.49305 0,-0.56967 1.5975595,-2.30743 8.4005212,-9.13778 7.650277,-7.68108 8.354317,-8.46172 7.883179,-8.74082 -0.284541,-0.16856 -1.129483,-0.87202 -1.87765,-1.56324 -0.748168,-0.69123 -1.539582,-1.25677 -1.758696,-1.25677 -0.219118,0 -3.752266,3.75047 -7.851442,8.33437 -6.5690651,7.34587 -7.5450443,8.33438 -8.2286827,8.33438 -0.6765158,0 -1.242142,-0.55038 -4.42611948,-4.30677 -2.00776772,-2.36873 -5.12727572,-6.11919 -6.93224132,-8.33438 -1.8161532,-2.22891 -3.4759605,-4.0276 -3.7166165,-4.0276 -0.239173,0 -0.905508,0.48374 -1.480744,1.07499 -0.575236,0.59125 -1.432837,1.31534 -1.90578,1.60908 -0.472943,0.29375 -0.859896,0.6399 -0.859896,0.76922 0,0.12932 3.451372,4.01891 7.6697149,8.64353 4.2183433,4.62461 7.67115567,8.60037 7.67291779,8.83503 0.001852,0.23465 -0.36054507,0.88435 -0.80512447,1.44378 -1.46152982,1.8391 -13.70463922,15.10199 -15.32925722,16.6061 -0.874225,0.80937 -1.589501,1.56261 -1.589501,1.67384 0,0.37307 3.566826,3.749 3.985139,3.77185 0.227295,0.0124 0.696307,-0.36437 1.042249,-0.83732 z" id="path49" /> <path style="display:inline;fill:#374c5f;stroke-width:0.26458335" d="m -12.192552,317.37787 c 0.231069,-0.27967 1.728207,-2.05631 3.3269741,-3.94808 1.598767,-1.89177 4.9101467,-5.88037 7.3586223,-8.86354 4.9291454,-6.00559 5.0860036,-6.18658 4.6871125,-5.40836 -0.3651779,0.71246 -15.0018279,18.26499 -15.4494769,18.52729 -0.199557,0.11693 -0.167406,-0.0118 0.07677,-0.30731 z m 24.715292,-8.60265 c -6.5991872,-7.78226 -9.0784839,-10.81339 -7.7709898,-9.50064 1.3580719,1.36353 15.6006308,18.25685 15.3835508,18.24667 -0.112324,-0.005 -3.537977,-3.94098 -7.612561,-8.74603 z m -29.44914,6.5602 c -0.465109,-0.47987 -0.844469,-0.98589 -0.843022,-1.12448 0.0014,-0.13859 0.966665,-1.26402 2.14493,-2.50094 4.343363,-4.55961 15.57952346,-16.9654 15.57952346,-17.20128 0,-0.29784 -0.77138215,-1.1715 -8.93051836,-10.1146 -3.5502621,-3.89139 -6.4163231,-7.22514 -6.3690231,-7.40834 0.139384,-0.53984 4.320243,-4.43412 4.76043,-4.43412 0.221707,0 2.1776894,2.16779 4.346628,4.81731 5.72855509,6.99786 10.1391991,12.12418 10.5756505,12.29166 0.2093145,0.0803 0.588653,-0.0951 0.8429731,-0.38982 0.8764324,-1.01565 13.1645504,-14.72553 14.2606504,-15.91063 l 1.098246,-1.18742 2.275192,2.22076 c 1.251355,1.22141 2.275189,2.29809 2.275189,2.39261 0,0.0945 -3.283937,3.43692 -7.29764,7.42755 -8.6137566,8.56424 -9.5351813,9.59391 -9.2076139,10.28924 0.2409481,0.51147 7.5077639,8.46804 16.7453709,18.33481 l 0.931969,0.99544 -0.774023,0.72435 c -0.425712,0.39839 -0.57037,0.47685 -0.321461,0.17435 0.615109,-0.74754 0.571524,-0.96795 -0.28806,-1.45676 -0.4055,-0.2306 -4.393342,-4.37459 -8.861867,-9.20887 -6.4151642,-6.94025 -8.1245922,-8.93761 -8.1245922,-9.49305 0,-0.56967 1.5975595,-2.30743 8.4005212,-9.13778 7.650277,-7.68108 8.354317,-8.46172 7.883179,-8.74082 -0.284541,-0.16856 -1.129483,-0.87202 -1.87765,-1.56324 -0.748168,-0.69123 -1.539582,-1.25677 -1.758696,-1.25677 -0.219118,0 -3.752266,3.75047 -7.851442,8.33437 -6.5690651,7.34587 -7.5450443,8.33438 -8.2286827,8.33438 -0.6765158,0 -1.242142,-0.55038 -4.42611948,-4.30677 -2.00776772,-2.36873 -5.12727572,-6.11919 -6.93224132,-8.33438 -1.8161532,-2.22891 -3.4759605,-4.0276 -3.7166165,-4.0276 -0.239173,0 -0.905508,0.48374 -1.480744,1.07499 -0.575236,0.59125 -1.432837,1.31534 -1.90578,1.60908 -0.472943,0.29375 -0.859896,0.6399 -0.859896,0.76922 0,0.12932 3.451372,4.01891 7.6697149,8.64353 4.2183433,4.62461 7.67115567,8.60037 7.67291779,8.83503 0.001852,0.23465 -0.36054507,0.88435 -0.80512447,1.44378 -1.46152982,1.8391 -13.70463922,15.10199 -15.32925722,16.6061 -0.874225,0.80937 -1.589501,1.56066 -1.589501,1.66952 0,0.10885 0.319932,0.53186 0.71096,0.94 0.391027,0.40815 0.652508,0.74208 0.581069,0.74208 -0.07144,0 -0.510434,-0.39262 -0.975543,-0.87249 z" id="path51" /> </g> </g>
 					</svg>
 				</a>
-				<h2>Contenido del modal - 7</h2>
+
+				<!--  -->
+
+				<div class="MarvelC">
+
+					<input type="radio" name="deslizadosMarvel" id="deslizarMarvel-1" checked>
+					<input type="radio" name="deslizadosMarvel" id="deslizarMarvel-2">
+					<input type="radio" name="deslizadosMarvel" id="deslizarMarvel-3">
+					<input type="radio" name="deslizadosMarvel" id="deslizarMarvel-4">
+					<input type="radio" name="deslizadosMarvel" id="deslizarMarvel-5">
+					<input type="radio" name="deslizadosMarvel" id="deslizarMarvel-6">
+
+					<ul class="deslizadosMarvel">
+						<li class="deslizarMarvel">
+							<article class="portfolio-modal">
+								<img src="img/MarvelousD001.jpg" alt="skill 1">
+								<div class="portfolio-info">
+									<h3>TITLE</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime excepturi nisi minus suscipit dicta eos sit? Voluptatum dicta, placeat excepturi repellendus similique exercitationem nihil quisquam, deleniti. Autem, nemo non.
+									</p>
+									<!-- <p>
+										The links are below. They are freely accessible without being registered as a user at <a href="https://www.freelancer.com" target="_blank">freelancer.com</a>.
+									</p>
+									<img class="contestimg" src="VR4J.jpg" alt="skill 1">
+									<div class="portfolio-details">
+										<small><b>CONTEST:</b></small>
+											<small><a href="https://www.freelancer.com/contest/I-need-some-Graphic-Design-908938" target="_blank" rel="noopened">https://www.freelancer.com/contest/908938</a></small>
+										<small><b>ENTRY:</b></small>
+											<small><a href="https://www.freelancer.com/contest/viewentry.php?project_id=908938&entry_id=11610087&fast_login=1" target="_blank" rel="noopened">https://www.freelancer.com/contest/908938_11610087</a></small>
+									</div> -->
+								</div>
+							</article>
+						</li>
+						<!--  -->
+						<li class="deslizarMarvel">
+							<article class="portfolio-modal">
+								<img src="img/MarvelousD003.jpg" alt="skill 1">
+								<div class="portfolio-info">
+									<h3>TITLE</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime excepturi nisi minus suscipit dicta eos sit? Voluptatum dicta, placeat excepturi repellendus similique exercitationem nihil quisquam, deleniti. Autem, nemo non.
+									</p>
+									<!-- <p>
+										The links are below. They are freely accessible without being registered as a user at <a href="https://www.freelancer.com" target="_blank">freelancer.com</a>.
+									</p>
+									<div class="portfolio-details">
+										<small><b>CONTEST:</b></small>
+											<small><a href="https://www.freelancer.com/contest/Design-two-D-cartoon-logo-for-walkie-talkie-for-kids-one-for-boys-and-one-for-girls-in-USA-661410" target="_blank" rel="noopened">https://www.freelancer.com/contest/661410</a></small>
+										<small><b>ENTRY:</b></small>
+											<small><a href="https://www.freelancer.com/contest/Design-two-D-cartoon-logo-for-walkie-talkie-for-kids-one-for-boys-and-one-for-girls-in-USA-661410-byentry-9925977" target="_blank" rel="noopened">https://www.freelancer.com/contest/661410-byentry-9925977</a></small>
+									</div> -->
+								</div>
+							</article>
+						</li>
+						<!--  -->
+						<li class="deslizarMarvel">
+							<article class="portfolio-modal">
+								<img src="img/MarvelousD004.jpg" alt="skill 1">
+								<div class="portfolio-info">
+									<h3>TITLE</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime excepturi nisi minus suscipit dicta eos sit? Voluptatum dicta, placeat excepturi repellendus similique exercitationem nihil quisquam, deleniti. Autem, nemo non.
+									</p>
+									<!-- <p>
+										The links are below. They are freely accessible without being registered as a user at <a href="https://www.freelancer.com" target="_blank">freelancer.com</a>.
+									</p>
+									<div class="portfolio-details">
+										<small><b>CONTEST:</b></small>
+											<small><a href="https://www.freelancer.com/contest/Design-a-simple-Marvelration-860887" target="_blank" rel="noopened">https://www.freelancer.com/contest/860887</a></small>
+										<small><b>ENTRY:</b></small>
+											<small><a href="https://www.freelancer.com/contest/Design-a-simple-Marvelration-860887-byentry-10644477" target="_blank" rel="noopened">https://www.freelancer.com/contest/860887-byentry-10644477</a></small>
+									</div> -->
+								</div>
+							</article>
+						</li>
+						<!--  -->
+						<li class="deslizarMarvel">
+							<article class="portfolio-modal">
+								<img src="img/MarvelousD005.jpg" alt="skill 1">
+								<div class="portfolio-info">
+									<h3>TITLE</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime excepturi nisi minus suscipit dicta eos sit? Voluptatum dicta, placeat excepturi repellendus similique exercitationem nihil quisquam, deleniti. Autem, nemo non.
+									</p>
+									<!-- <p>
+										The links are below. They are freely accessible without being registered as a user at <a href="https://www.freelancer.com" target="_blank">freelancer.com</a>.
+									</p>
+									<div class="portfolio-details">
+										<small><b>CONTEST:</b></small>
+											<small><a href="https://www.freelancer.com/contest/Design-a-simple-Marvelration-860887" target="_blank" rel="noopened">https://www.freelancer.com/contest/860887</a></small>
+										<small><b>ENTRY:</b></small>
+											<small><a href="https://www.freelancer.com/contest/Design-a-simple-Marvelration-860887-byentry-10644477" target="_blank" rel="noopened">https://www.freelancer.com/contest/860887-byentry-10644477</a></small>
+									</div> -->
+								</div>
+							</article>
+						</li>
+						<!--  -->
+						<li class="deslizarMarvel">
+							<article class="portfolio-modal">
+								<img src="img/MarvelousD006.jpg" alt="skill 1">
+								<div class="portfolio-info">
+									<h3>TITLE</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime excepturi nisi minus suscipit dicta eos sit? Voluptatum dicta, placeat excepturi repellendus similique exercitationem nihil quisquam, deleniti. Autem, nemo non.
+									</p>
+									<!-- <p>
+										The links are below. They are freely accessible without being registered as a user at <a href="https://www.freelancer.com" target="_blank">freelancer.com</a>.
+									</p>
+									<div class="portfolio-details">
+										<small><b>CONTEST:</b></small>
+											<small><a href="https://www.freelancer.com/contest/Design-a-simple-Marvelration-860887" target="_blank" rel="noopened">https://www.freelancer.com/contest/860887</a></small>
+										<small><b>ENTRY:</b></small>
+											<small><a href="https://www.freelancer.com/contest/Design-a-simple-Marvelration-860887-byentry-10644477" target="_blank" rel="noopened">https://www.freelancer.com/contest/860887-byentry-10644477</a></small>
+									</div> -->
+								</div>
+							</article>
+						</li>
+						<!--  -->
+						<li class="deslizarMarvel">
+							<article class="portfolio-modal">
+								<img src="img/MarvelousD007.jpg" alt="skill 1">
+								<div class="portfolio-info">
+									<h3>TITLE</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime excepturi nisi minus suscipit dicta eos sit? Voluptatum dicta, placeat excepturi repellendus similique exercitationem nihil quisquam, deleniti. Autem, nemo non.
+									</p>
+									<!-- <p>
+										The links are below. They are freely accessible without being registered as a user at <a href="https://www.freelancer.com" target="_blank">freelancer.com</a>.
+									</p>
+									<div class="portfolio-details">
+										<small><b>CONTEST:</b></small>
+											<small><a href="https://www.freelancer.com/contest/Design-a-simple-Marvelration-860887" target="_blank" rel="noopened">https://www.freelancer.com/contest/860887</a></small>
+										<small><b>ENTRY:</b></small>
+											<small><a href="https://www.freelancer.com/contest/Design-a-simple-Marvelration-860887-byentry-10644477" target="_blank" rel="noopened">https://www.freelancer.com/contest/860887-byentry-10644477</a></small>
+									</div> -->
+								</div>
+							</article>
+						</li>
+					</ul>
+
+					<div class="deslizadosMarvel-nav">
+						<label for="deslizarMarvel-1" id="puntoM-1" ></label>
+						<label for="deslizarMarvel-2" id="puntoM-2" ></label>
+						<label for="deslizarMarvel-3" id="puntoM-3" ></label>
+						<label for="deslizarMarvel-4" id="puntoM-4" ></label>
+						<label for="deslizarMarvel-5" id="puntoM-5" ></label>
+						<label for="deslizarMarvel-6" id="puntoM-6" ></label>
+					</div>
+				</div>
+				<!--  -->
 			</div>
 		</article>
 <!-- ARTICLE 8 ---------------------------------------------------------------- -->
